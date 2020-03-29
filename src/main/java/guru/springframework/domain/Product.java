@@ -1,7 +1,7 @@
 package guru.springframework.domain;
 
-import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
+import org.springframework.data.annotation.Id;
 
 import java.math.BigDecimal;
 
@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @NodeEntity
 public class Product {
 
-    @GraphId
+    @Id
     private Long id;
     private String description;
     private BigDecimal price;
